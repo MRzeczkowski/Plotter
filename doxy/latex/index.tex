@@ -1,0 +1,12 @@
+\begin{DoxyAuthor}{Authors}
+Mateusz Rzeczkowski 
+
+Krzysztof Kozoń
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11.\+07.\+2018
+\end{DoxyDate}
+Aplikacja składa się z klienta i serwera napisanych w C. Klient wysyła do serwera plik zawierający próbki pobierane z urządzenia pomiarowego w równych odstępach czasu (parametr konfigurowalny). Serwer na tej podstawie tworzy wykres pomiarów wykorzystując aplikację do rysowania (np. gnuplot), eksportuje go do pliku i przesyła klientowi. Komunikacja zabezpieczona jest za pomocą Open\+S\+SL.\hypertarget{index_s1}{}\section{Dokumentacja użytkownika}\label{index_s1}
+\hypertarget{index_ss1}{}\subsection{Serwer}\label{index_ss1}
+Należy uruchomić serwer poprzez uruchomienie pliku ./\+P\+L\+O\+T\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER z konsoli systemowej. Po uruchomieniu sie, serwer poprosi o haslo certyfikatu, ktore należy podac. W przypadku bledu nalezy sie upewnic czy wpisywane haslo jest poprawne.\hypertarget{index_ss2}{}\subsection{Klient}\label{index_ss2}
+Należy uruchomić klienta poprzez uruchomienie pliku ./\+P\+L\+O\+T\+T\+E\+R\+\_\+\+C\+L\+I\+E\+NT z konsoli systemowej, dodatkowo jako argument można podać ścieżkę do pliku, który chcemy przeslac (domyślnie plik nie wiekszy niz 8kB). Po przeslaniu pliku serwer odpowie odsylajac wykres. 

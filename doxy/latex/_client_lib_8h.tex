@@ -1,0 +1,147 @@
+\hypertarget{_client_lib_8h}{}\section{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/client\+Files/\+Client\+Lib.h File Reference}
+\label{_client_lib_8h}\index{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/client\+Files/\+Client\+Lib.\+h@{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/client\+Files/\+Client\+Lib.\+h}}
+{\ttfamily \#include \char`\"{}../\+S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+Include dependency graph for Client\+Lib.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_client_lib_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_client_lib_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_client_lib_8h_af6522c0bf90112d406d555fc980f6ae9}{Send\+File\+To\+Server} (char $\ast$\hyperlink{_server_lib_8h_ad5334765c4af576144103e5bfea9b01e}{fs\+\_\+name})
+\item 
+void \hyperlink{_client_lib_8h_ad453af427d2a8dca1bbca7898ef9ad04}{Receive\+File\+From\+Server} (char $\ast$\hyperlink{_server_lib_8h_a136e211133c7af859abfc129f4e950fa}{fr\+\_\+name})
+\item 
+void \hyperlink{_client_lib_8h_a1863a0101fe9f7732423c00ae1b64dbc}{Connect\+With\+Port} (int \hyperlink{_p_l_o_t_t_e_r___s_e_r_v_e_r_8c_a614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT})
+\item 
+static int \hyperlink{_client_lib_8h_afa61945039a6813d1d3807080be55a60}{Get\+Client\+Socket\+FD} ()
+\item 
+static void \hyperlink{_client_lib_8h_a931157773e5116d217f9f79438589dc6}{Close\+Client\+Connection} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static S\+S\+L\+\_\+\+M\+E\+T\+H\+OD $\ast$ \hyperlink{_client_lib_8h_a67a0b3150dfacb2f75fba66e0959f560}{client\+\_\+ssl\+\_\+method}
+\begin{DoxyCompactList}\small\item\em Describes the ssl library functions which implement the protocol version. \end{DoxyCompactList}\item 
+static S\+S\+L\+\_\+\+C\+TX $\ast$ \hyperlink{_client_lib_8h_ae5429a87dee8628ab5a51bdcb88e336a}{client\+\_\+ssl\+\_\+ctx}
+\begin{DoxyCompactList}\small\item\em The global context structure. \end{DoxyCompactList}\item 
+static S\+SL $\ast$ \hyperlink{_client_lib_8h_a29a4fb7a75bd99073cdf6a6c871ad771}{client\+\_\+ssl}
+\begin{DoxyCompactList}\small\item\em Core structure in the S\+SL A\+PI. \end{DoxyCompactList}\item 
+static int \hyperlink{_client_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}{sockfd}
+\begin{DoxyCompactList}\small\item\em Socket file descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!Close\+Client\+Connection@{Close\+Client\+Connection}}
+\index{Close\+Client\+Connection@{Close\+Client\+Connection}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Close\+Client\+Connection()}{CloseClientConnection()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Close\+Client\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_client_lib_8h_a931157773e5116d217f9f79438589dc6}{}\label{_client_lib_8h_a931157773e5116d217f9f79438589dc6}
+Closes a connection with Server 
+
+Definition at line 79 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!Connect\+With\+Port@{Connect\+With\+Port}}
+\index{Connect\+With\+Port@{Connect\+With\+Port}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Connect\+With\+Port(int P\+O\+R\+T)}{ConnectWithPort(int PORT)}}]{\setlength{\rightskip}{0pt plus 5cm}void Connect\+With\+Port (
+\begin{DoxyParamCaption}
+\item[{int}]{P\+O\+RT}
+\end{DoxyParamCaption}
+)}\hypertarget{_client_lib_8h_a1863a0101fe9f7732423c00ae1b64dbc}{}\label{_client_lib_8h_a1863a0101fe9f7732423c00ae1b64dbc}
+Connects with server 
+
+Definition at line 32 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!Get\+Client\+Socket\+FD@{Get\+Client\+Socket\+FD}}
+\index{Get\+Client\+Socket\+FD@{Get\+Client\+Socket\+FD}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Get\+Client\+Socket\+F\+D()}{GetClientSocketFD()}}]{\setlength{\rightskip}{0pt plus 5cm}int Get\+Client\+Socket\+FD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_client_lib_8h_afa61945039a6813d1d3807080be55a60}{}\label{_client_lib_8h_afa61945039a6813d1d3807080be55a60}
+Return a socket file descriptor 
+
+Definition at line 18 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!Receive\+File\+From\+Server@{Receive\+File\+From\+Server}}
+\index{Receive\+File\+From\+Server@{Receive\+File\+From\+Server}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Receive\+File\+From\+Server(char $\ast$fr\+\_\+name)}{ReceiveFileFromServer(char *fr_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receive\+File\+From\+Server (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{fr\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{_client_lib_8h_ad453af427d2a8dca1bbca7898ef9ad04}{}\label{_client_lib_8h_ad453af427d2a8dca1bbca7898ef9ad04}
+Gets plot image form the server 
+
+Definition at line 69 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!Send\+File\+To\+Server@{Send\+File\+To\+Server}}
+\index{Send\+File\+To\+Server@{Send\+File\+To\+Server}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Send\+File\+To\+Server(char $\ast$fs\+\_\+name)}{SendFileToServer(char *fs_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Send\+File\+To\+Server (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{fs\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{_client_lib_8h_af6522c0bf90112d406d555fc980f6ae9}{}\label{_client_lib_8h_af6522c0bf90112d406d555fc980f6ae9}
+Sends data to the server that will be plotted 
+
+Definition at line 59 of file Client\+Lib.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!client\+\_\+ssl@{client\+\_\+ssl}}
+\index{client\+\_\+ssl@{client\+\_\+ssl}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{client\+\_\+ssl}{client_ssl}}]{\setlength{\rightskip}{0pt plus 5cm}S\+SL$\ast$ client\+\_\+ssl\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_client_lib_8h_a29a4fb7a75bd99073cdf6a6c871ad771}{}\label{_client_lib_8h_a29a4fb7a75bd99073cdf6a6c871ad771}
+
+
+Core structure in the S\+SL A\+PI. 
+
+
+
+Definition at line 13 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!client\+\_\+ssl\+\_\+ctx@{client\+\_\+ssl\+\_\+ctx}}
+\index{client\+\_\+ssl\+\_\+ctx@{client\+\_\+ssl\+\_\+ctx}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{client\+\_\+ssl\+\_\+ctx}{client_ssl_ctx}}]{\setlength{\rightskip}{0pt plus 5cm}S\+S\+L\+\_\+\+C\+TX$\ast$ client\+\_\+ssl\+\_\+ctx\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_client_lib_8h_ae5429a87dee8628ab5a51bdcb88e336a}{}\label{_client_lib_8h_ae5429a87dee8628ab5a51bdcb88e336a}
+
+
+The global context structure. 
+
+
+
+Definition at line 12 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!client\+\_\+ssl\+\_\+method@{client\+\_\+ssl\+\_\+method}}
+\index{client\+\_\+ssl\+\_\+method@{client\+\_\+ssl\+\_\+method}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{client\+\_\+ssl\+\_\+method}{client_ssl_method}}]{\setlength{\rightskip}{0pt plus 5cm}S\+S\+L\+\_\+\+M\+E\+T\+H\+OD$\ast$ client\+\_\+ssl\+\_\+method\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_client_lib_8h_a67a0b3150dfacb2f75fba66e0959f560}{}\label{_client_lib_8h_a67a0b3150dfacb2f75fba66e0959f560}
+
+
+Describes the ssl library functions which implement the protocol version. 
+
+
+
+Definition at line 11 of file Client\+Lib.\+h.
+
+\index{Client\+Lib.\+h@{Client\+Lib.\+h}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Client\+Lib.\+h@{Client\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{sockfd}{sockfd}}]{\setlength{\rightskip}{0pt plus 5cm}int sockfd\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_client_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}{}\label{_client_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}
+
+
+Socket file descriptor. 
+
+
+
+Definition at line 15 of file Client\+Lib.\+h.
+

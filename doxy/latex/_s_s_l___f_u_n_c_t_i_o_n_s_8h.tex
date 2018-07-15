@@ -1,0 +1,125 @@
+\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h}{}\section{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/\+S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS.h File Reference}
+\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h}\index{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/\+S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/\+S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+{\ttfamily \#include $<$openssl/ssl.\+h$>$}\\*
+{\ttfamily \#include $<$openssl/err.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Project\+Lib.\+h\char`\"{}}\\*
+Include dependency graph for S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_s_s_l___f_u_n_c_t_i_o_n_s_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_s_s_l___f_u_n_c_t_i_o_n_s_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_ac9bc33eb715effb434f721bf1fb1fd2f}{S\+S\+L\+F\+\_\+\+Init\+Server} (S\+S\+L\+\_\+\+M\+E\+T\+H\+OD $\ast$$\ast$\hyperlink{_server_lib_8h_a3557813aa116b56d10daf27b11a5f1e4}{server\+\_\+ssl\+\_\+method}, S\+S\+L\+\_\+\+C\+TX $\ast$$\ast$\hyperlink{_server_lib_8h_a6565bf20bfe95e34576a921a32e2e844}{server\+\_\+ssl\+\_\+ctx})
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_ab8ceaea88e54727c8ac4d4540cf4f28f}{S\+S\+L\+F\+\_\+\+Accept\+Connection} (S\+SL $\ast$$\ast$\hyperlink{_server_lib_8h_ae2dd01ac08721021386d7edf80ab31e8}{server\+\_\+ssl}, S\+S\+L\+\_\+\+C\+TX $\ast$\hyperlink{_server_lib_8h_a6565bf20bfe95e34576a921a32e2e844}{server\+\_\+ssl\+\_\+ctx}, int \hyperlink{_server_lib_8h_aa84798d04177520e38984d0234a64557}{nsockfd})
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a4348638952bd3323328bc453df933767}{S\+S\+L\+F\+\_\+\+Init\+Client} (S\+S\+L\+\_\+\+M\+E\+T\+H\+OD $\ast$$\ast$\hyperlink{_client_lib_8h_a67a0b3150dfacb2f75fba66e0959f560}{client\+\_\+ssl\+\_\+method}, S\+S\+L\+\_\+\+C\+TX $\ast$$\ast$\hyperlink{_client_lib_8h_ae5429a87dee8628ab5a51bdcb88e336a}{client\+\_\+ssl\+\_\+ctx}, S\+SL $\ast$$\ast$\hyperlink{_client_lib_8h_a29a4fb7a75bd99073cdf6a6c871ad771}{client\+\_\+ssl})
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a8e8bb741e8f7385da02df44acc221fed}{S\+S\+L\+F\+\_\+\+Connect\+With\+Server} (S\+SL $\ast$\hyperlink{_client_lib_8h_a29a4fb7a75bd99073cdf6a6c871ad771}{client\+\_\+ssl}, int \hyperlink{_server_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}{sockfd})
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a4bf96901c24e8b3ef29150ff9ffbc38f}{S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save} (S\+SL $\ast$source, char $\ast$Save\+As)
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a964050927869014e690d941a64f1e178}{S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save} (S\+SL $\ast$source, char $\ast$Save\+As)
+\item 
+void \hyperlink{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a9071bc242ebce480973a3e82e29de061}{S\+S\+L\+F\+\_\+\+Open\+And\+Send} (S\+SL $\ast$sink, char $\ast$From\+File)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Accept\+Connection@{S\+S\+L\+F\+\_\+\+Accept\+Connection}}
+\index{S\+S\+L\+F\+\_\+\+Accept\+Connection@{S\+S\+L\+F\+\_\+\+Accept\+Connection}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Accept\+Connection(\+S\+S\+L $\ast$$\ast$server\+\_\+ssl, S\+S\+L\+\_\+\+C\+T\+X $\ast$server\+\_\+ssl\+\_\+ctx, int nsockfd)}{SSLF_AcceptConnection(SSL **server_ssl, SSL_CTX *server_ssl_ctx, int nsockfd)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Accept\+Connection (
+\begin{DoxyParamCaption}
+\item[{S\+SL $\ast$$\ast$}]{server\+\_\+ssl, }
+\item[{S\+S\+L\+\_\+\+C\+TX $\ast$}]{server\+\_\+ssl\+\_\+ctx, }
+\item[{int}]{nsockfd}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_ab8ceaea88e54727c8ac4d4540cf4f28f}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_ab8ceaea88e54727c8ac4d4540cf4f28f}
+Connects server with a socket file descriptor 
+
+Definition at line 41 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Connect\+With\+Server@{S\+S\+L\+F\+\_\+\+Connect\+With\+Server}}
+\index{S\+S\+L\+F\+\_\+\+Connect\+With\+Server@{S\+S\+L\+F\+\_\+\+Connect\+With\+Server}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Connect\+With\+Server(\+S\+S\+L $\ast$client\+\_\+ssl, int sockfd)}{SSLF_ConnectWithServer(SSL *client_ssl, int sockfd)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Connect\+With\+Server (
+\begin{DoxyParamCaption}
+\item[{S\+SL $\ast$}]{client\+\_\+ssl, }
+\item[{int}]{sockfd}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a8e8bb741e8f7385da02df44acc221fed}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a8e8bb741e8f7385da02df44acc221fed}
+Connects client to server 
+
+Definition at line 88 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Init\+Client@{S\+S\+L\+F\+\_\+\+Init\+Client}}
+\index{S\+S\+L\+F\+\_\+\+Init\+Client@{S\+S\+L\+F\+\_\+\+Init\+Client}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Init\+Client(\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D $\ast$$\ast$client\+\_\+ssl\+\_\+method, S\+S\+L\+\_\+\+C\+T\+X $\ast$$\ast$client\+\_\+ssl\+\_\+ctx, S\+S\+L $\ast$$\ast$client\+\_\+ssl)}{SSLF_InitClient(SSL_METHOD **client_ssl_method, SSL_CTX **client_ssl_ctx, SSL **client_ssl)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Init\+Client (
+\begin{DoxyParamCaption}
+\item[{S\+S\+L\+\_\+\+M\+E\+T\+H\+OD $\ast$$\ast$}]{client\+\_\+ssl\+\_\+method, }
+\item[{S\+S\+L\+\_\+\+C\+TX $\ast$$\ast$}]{client\+\_\+ssl\+\_\+ctx, }
+\item[{S\+SL $\ast$$\ast$}]{client\+\_\+ssl}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a4348638952bd3323328bc453df933767}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a4348638952bd3323328bc453df933767}
+Sets up S\+SL for client 
+
+Definition at line 64 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Init\+Server@{S\+S\+L\+F\+\_\+\+Init\+Server}}
+\index{S\+S\+L\+F\+\_\+\+Init\+Server@{S\+S\+L\+F\+\_\+\+Init\+Server}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Init\+Server(\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D $\ast$$\ast$server\+\_\+ssl\+\_\+method, S\+S\+L\+\_\+\+C\+T\+X $\ast$$\ast$server\+\_\+ssl\+\_\+ctx)}{SSLF_InitServer(SSL_METHOD **server_ssl_method, SSL_CTX **server_ssl_ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Init\+Server (
+\begin{DoxyParamCaption}
+\item[{S\+S\+L\+\_\+\+M\+E\+T\+H\+OD $\ast$$\ast$}]{server\+\_\+ssl\+\_\+method, }
+\item[{S\+S\+L\+\_\+\+C\+TX $\ast$$\ast$}]{server\+\_\+ssl\+\_\+ctx}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_ac9bc33eb715effb434f721bf1fb1fd2f}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_ac9bc33eb715effb434f721bf1fb1fd2f}
+Set up S\+SL for server 
+
+Definition at line 16 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Open\+And\+Send@{S\+S\+L\+F\+\_\+\+Open\+And\+Send}}
+\index{S\+S\+L\+F\+\_\+\+Open\+And\+Send@{S\+S\+L\+F\+\_\+\+Open\+And\+Send}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Open\+And\+Send(\+S\+S\+L $\ast$sink, char $\ast$\+From\+File)}{SSLF_OpenAndSend(SSL *sink, char *FromFile)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Open\+And\+Send (
+\begin{DoxyParamCaption}
+\item[{S\+SL $\ast$}]{sink, }
+\item[{char $\ast$}]{From\+File}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a9071bc242ebce480973a3e82e29de061}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a9071bc242ebce480973a3e82e29de061}
+Sends file 
+
+Definition at line 147 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save@{S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save}}
+\index{S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save@{S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save(\+S\+S\+L $\ast$source, char $\ast$\+Save\+As)}{SSLF_RecieveBigAndSave(SSL *source, char *SaveAs)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Recieve\+Big\+And\+Save (
+\begin{DoxyParamCaption}
+\item[{S\+SL $\ast$}]{source, }
+\item[{char $\ast$}]{Save\+As}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a4bf96901c24e8b3ef29150ff9ffbc38f}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a4bf96901c24e8b3ef29150ff9ffbc38f}
+Reads recived bytes (larger files) and save them 
+
+Definition at line 102 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+
+\index{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}!S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save@{S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save}}
+\index{S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save@{S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save}!S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h@{S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h}}
+\subsubsection[{\texorpdfstring{S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save(\+S\+S\+L $\ast$source, char $\ast$\+Save\+As)}{SSLF_RecieveSmallAndSave(SSL *source, char *SaveAs)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S\+L\+F\+\_\+\+Recieve\+Small\+And\+Save (
+\begin{DoxyParamCaption}
+\item[{S\+SL $\ast$}]{source, }
+\item[{char $\ast$}]{Save\+As}
+\end{DoxyParamCaption}
+)}\hypertarget{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a964050927869014e690d941a64f1e178}{}\label{_s_s_l___f_u_n_c_t_i_o_n_s_8h_a964050927869014e690d941a64f1e178}
+Reads recived bytes and save them 
+
+Definition at line 123 of file S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h.
+

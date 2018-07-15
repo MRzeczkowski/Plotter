@@ -1,0 +1,342 @@
+\hypertarget{_server_lib_8h}{}\section{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/server\+Files/\+Server\+Lib.h File Reference}
+\label{_server_lib_8h}\index{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/server\+Files/\+Server\+Lib.\+h@{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/server\+Files/\+Server\+Lib.\+h}}
+{\ttfamily \#include \char`\"{}../\+S\+S\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S.\+h\char`\"{}}\\*
+Include dependency graph for Server\+Lib.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_server_lib_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{_server_lib_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_server_lib_8h_aca4792f4c960c09ac7b39fd7edae2c16}{create\+Daemon} ()
+\item 
+static void \hyperlink{_server_lib_8h_aeb15c822259f5a1106af2bee31ee500b}{demonize} ()
+\item 
+static void \hyperlink{_server_lib_8h_a80c4cb425067dcd535ea2079e697014b}{log\+Server\+Notice} ()
+\item 
+void \hyperlink{_server_lib_8h_a40fdfd52c86ec3e5079b74b0533c7363}{Bind\+With\+Port\+And\+Run} (int \hyperlink{_p_l_o_t_t_e_r___s_e_r_v_e_r_8c_aeefbbafa97642defe3ee6c3080b7d66f}{B\+A\+C\+K\+L\+OG}, int \hyperlink{_p_l_o_t_t_e_r___s_e_r_v_e_r_8c_a614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT})
+\item 
+static int \hyperlink{_server_lib_8h_a7a56f581ff1fd1820c4509ed7b9167b6}{Get\+Server\+Socket\+FD} ()
+\item 
+static void \hyperlink{_server_lib_8h_a48b48ace2f1c7517d46a92ca743a1f4f}{Listen\+To\+Remote} ()
+\item 
+static void \hyperlink{_server_lib_8h_a9674cd6c678554c56dfab098c4020fa7}{Obtain\+Connection} ()
+\item 
+static void \hyperlink{_server_lib_8h_a10923088fb087da55394f9a7e69b7925}{Receive\+File\+From\+Client} ()
+\item 
+static void \hyperlink{_server_lib_8h_ab997b2f7a1850edba0931b1fa359d937}{Create\+Plot} ()
+\item 
+static void \hyperlink{_server_lib_8h_a9ed99901d142c518bb99b28e3ef6702f}{Send\+Plot\+To\+Client} ()
+\item 
+static void \hyperlink{_server_lib_8h_af21a57de9f5a4e3fbc99ed1287032ab7}{Close\+Connection} ()
+\item 
+static void \hyperlink{_server_lib_8h_a7f98f17c443f1397d9a056e32a093229}{sigint\+Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_server_lib_8h_a136e211133c7af859abfc129f4e950fa}{fr\+\_\+name} = \char`\"{}tmp/Plotter\+Server\+Files/receive.\+dat\char`\"{}
+\begin{DoxyCompactList}\small\item\em Defines the localization of \textquotesingle{}receive.\+dat\textquotesingle{}. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{_server_lib_8h_ad5334765c4af576144103e5bfea9b01e}{fs\+\_\+name} = \char`\"{}tmp/Plotter\+Server\+Files/output.\+plt\char`\"{}
+\begin{DoxyCompactList}\small\item\em Defines the localization of \textquotesingle{}output.\+plt\textquotesingle{}. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{_server_lib_8h_aaeebc6df5c6629080a763c0be580d74c}{plot\+Name} = \char`\"{}tmp/Plotter\+Server\+Files/output.\+png\char`\"{}
+\begin{DoxyCompactList}\small\item\em Defines the localization of \textquotesingle{}output.\+png\textquotesingle{}. \end{DoxyCompactList}\item 
+static char \hyperlink{_server_lib_8h_a3343eda9b3e780395a0509b3cd3c1cbd}{notice\+Buff} \mbox{[}256\mbox{]}
+\begin{DoxyCompactList}\small\item\em The buffer of server notices. \end{DoxyCompactList}\item 
+static int \hyperlink{_server_lib_8h_aaadb9a508ff3e162bdab7a45d54ce88e}{is\+Daemon} = 0
+\begin{DoxyCompactList}\small\item\em Flag specifying whether server is a deamon. \end{DoxyCompactList}\item 
+static int \hyperlink{_server_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}{sockfd}
+\begin{DoxyCompactList}\small\item\em Socket file descriptor. \end{DoxyCompactList}\item 
+static int \hyperlink{_server_lib_8h_aa84798d04177520e38984d0234a64557}{nsockfd}
+\begin{DoxyCompactList}\small\item\em New socket file descriptor. \end{DoxyCompactList}\item 
+static int \hyperlink{_server_lib_8h_a9507e1c27beffe02ed97c7b076a42f24}{backlog}
+\begin{DoxyCompactList}\small\item\em Defines the maximum length to which the queue of pending connections for sockfd. \end{DoxyCompactList}\item 
+static int \hyperlink{_server_lib_8h_a63c89c04d1feae07ca35558055155ffb}{port}
+\begin{DoxyCompactList}\small\item\em Server port number. \end{DoxyCompactList}\item 
+static S\+S\+L\+\_\+\+M\+E\+T\+H\+OD $\ast$ \hyperlink{_server_lib_8h_a3557813aa116b56d10daf27b11a5f1e4}{server\+\_\+ssl\+\_\+method}
+\begin{DoxyCompactList}\small\item\em Describes the ssl library functions which implement the protocol version. \end{DoxyCompactList}\item 
+static S\+S\+L\+\_\+\+C\+TX $\ast$ \hyperlink{_server_lib_8h_a6565bf20bfe95e34576a921a32e2e844}{server\+\_\+ssl\+\_\+ctx}
+\begin{DoxyCompactList}\small\item\em The global context structure. \end{DoxyCompactList}\item 
+static S\+SL $\ast$ \hyperlink{_server_lib_8h_ae2dd01ac08721021386d7edf80ab31e8}{server\+\_\+ssl}
+\begin{DoxyCompactList}\small\item\em Core structure in the S\+SL A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Bind\+With\+Port\+And\+Run@{Bind\+With\+Port\+And\+Run}}
+\index{Bind\+With\+Port\+And\+Run@{Bind\+With\+Port\+And\+Run}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Bind\+With\+Port\+And\+Run(int B\+A\+C\+K\+L\+O\+G, int P\+O\+R\+T)}{BindWithPortAndRun(int BACKLOG, int PORT)}}]{\setlength{\rightskip}{0pt plus 5cm}void Bind\+With\+Port\+And\+Run (
+\begin{DoxyParamCaption}
+\item[{int}]{B\+A\+C\+K\+L\+OG, }
+\item[{int}]{P\+O\+RT}
+\end{DoxyParamCaption}
+)}\hypertarget{_server_lib_8h_a40fdfd52c86ec3e5079b74b0533c7363}{}\label{_server_lib_8h_a40fdfd52c86ec3e5079b74b0533c7363}
+Binds server with port 
+
+Definition at line 151 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Close\+Connection@{Close\+Connection}}
+\index{Close\+Connection@{Close\+Connection}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Close\+Connection()}{CloseConnection()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Close\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_af21a57de9f5a4e3fbc99ed1287032ab7}{}\label{_server_lib_8h_af21a57de9f5a4e3fbc99ed1287032ab7}
+Closes a connection with Client 
+
+Definition at line 301 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!create\+Daemon@{create\+Daemon}}
+\index{create\+Daemon@{create\+Daemon}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{create\+Daemon()}{createDaemon()}}]{\setlength{\rightskip}{0pt plus 5cm}void create\+Daemon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_server_lib_8h_aca4792f4c960c09ac7b39fd7edae2c16}{}\label{_server_lib_8h_aca4792f4c960c09ac7b39fd7edae2c16}
+Runs server as a daemon 
+
+Definition at line 115 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Create\+Plot@{Create\+Plot}}
+\index{Create\+Plot@{Create\+Plot}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Create\+Plot()}{CreatePlot()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Create\+Plot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_ab997b2f7a1850edba0931b1fa359d937}{}\label{_server_lib_8h_ab997b2f7a1850edba0931b1fa359d937}
+Creates plot from data that the client has sent 
+
+Definition at line 250 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!demonize@{demonize}}
+\index{demonize@{demonize}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{demonize()}{demonize()}}]{\setlength{\rightskip}{0pt plus 5cm}static void demonize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_aeb15c822259f5a1106af2bee31ee500b}{}\label{_server_lib_8h_aeb15c822259f5a1106af2bee31ee500b}
+Creates daemon process 
+
+Definition at line 48 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Get\+Server\+Socket\+FD@{Get\+Server\+Socket\+FD}}
+\index{Get\+Server\+Socket\+FD@{Get\+Server\+Socket\+FD}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Get\+Server\+Socket\+F\+D()}{GetServerSocketFD()}}]{\setlength{\rightskip}{0pt plus 5cm}int Get\+Server\+Socket\+FD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a7a56f581ff1fd1820c4509ed7b9167b6}{}\label{_server_lib_8h_a7a56f581ff1fd1820c4509ed7b9167b6}
+Return a socket file descriptor 
+
+Definition at line 34 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Listen\+To\+Remote@{Listen\+To\+Remote}}
+\index{Listen\+To\+Remote@{Listen\+To\+Remote}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Listen\+To\+Remote()}{ListenToRemote()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Listen\+To\+Remote (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a48b48ace2f1c7517d46a92ca743a1f4f}{}\label{_server_lib_8h_a48b48ace2f1c7517d46a92ca743a1f4f}
+Listens to remote port 
+
+Definition at line 185 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!log\+Server\+Notice@{log\+Server\+Notice}}
+\index{log\+Server\+Notice@{log\+Server\+Notice}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{log\+Server\+Notice()}{logServerNotice()}}]{\setlength{\rightskip}{0pt plus 5cm}static void log\+Server\+Notice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a80c4cb425067dcd535ea2079e697014b}{}\label{_server_lib_8h_a80c4cb425067dcd535ea2079e697014b}
+Logs servers notices 
+
+Definition at line 126 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Obtain\+Connection@{Obtain\+Connection}}
+\index{Obtain\+Connection@{Obtain\+Connection}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Obtain\+Connection()}{ObtainConnection()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Obtain\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a9674cd6c678554c56dfab098c4020fa7}{}\label{_server_lib_8h_a9674cd6c678554c56dfab098c4020fa7}
+Awaits connection and when one is established returns socket descriptor 
+
+Definition at line 216 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Receive\+File\+From\+Client@{Receive\+File\+From\+Client}}
+\index{Receive\+File\+From\+Client@{Receive\+File\+From\+Client}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Receive\+File\+From\+Client()}{ReceiveFileFromClient()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Receive\+File\+From\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a10923088fb087da55394f9a7e69b7925}{}\label{_server_lib_8h_a10923088fb087da55394f9a7e69b7925}
+Receives file sent from client 
+
+Definition at line 240 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!Send\+Plot\+To\+Client@{Send\+Plot\+To\+Client}}
+\index{Send\+Plot\+To\+Client@{Send\+Plot\+To\+Client}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{Send\+Plot\+To\+Client()}{SendPlotToClient()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Send\+Plot\+To\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a9ed99901d142c518bb99b28e3ef6702f}{}\label{_server_lib_8h_a9ed99901d142c518bb99b28e3ef6702f}
+Sends back a gnuplot in png format to the user 
+
+Definition at line 290 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!sigint\+Handler@{sigint\+Handler}}
+\index{sigint\+Handler@{sigint\+Handler}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{sigint\+Handler()}{sigintHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}static void sigint\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a7f98f17c443f1397d9a056e32a093229}{}\label{_server_lib_8h_a7f98f17c443f1397d9a056e32a093229}
+Handles S\+I\+G\+I\+NT, shuts down demon 
+
+Definition at line 135 of file Server\+Lib.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!backlog@{backlog}}
+\index{backlog@{backlog}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{backlog}{backlog}}]{\setlength{\rightskip}{0pt plus 5cm}int backlog\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a9507e1c27beffe02ed97c7b076a42f24}{}\label{_server_lib_8h_a9507e1c27beffe02ed97c7b076a42f24}
+
+
+Defines the maximum length to which the queue of pending connections for sockfd. 
+
+
+
+Definition at line 11 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!fr\+\_\+name@{fr\+\_\+name}}
+\index{fr\+\_\+name@{fr\+\_\+name}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{fr\+\_\+name}{fr_name}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ fr\+\_\+name = \char`\"{}tmp/Plotter\+Server\+Files/receive.\+dat\char`\"{}}\hypertarget{_server_lib_8h_a136e211133c7af859abfc129f4e950fa}{}\label{_server_lib_8h_a136e211133c7af859abfc129f4e950fa}
+
+
+Defines the localization of \textquotesingle{}receive.\+dat\textquotesingle{}. 
+
+
+
+Definition at line 3 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!fs\+\_\+name@{fs\+\_\+name}}
+\index{fs\+\_\+name@{fs\+\_\+name}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{fs\+\_\+name}{fs_name}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ fs\+\_\+name = \char`\"{}tmp/Plotter\+Server\+Files/output.\+plt\char`\"{}}\hypertarget{_server_lib_8h_ad5334765c4af576144103e5bfea9b01e}{}\label{_server_lib_8h_ad5334765c4af576144103e5bfea9b01e}
+
+
+Defines the localization of \textquotesingle{}output.\+plt\textquotesingle{}. 
+
+
+
+Definition at line 4 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!is\+Daemon@{is\+Daemon}}
+\index{is\+Daemon@{is\+Daemon}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{is\+Daemon}{isDaemon}}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Daemon = 0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_aaadb9a508ff3e162bdab7a45d54ce88e}{}\label{_server_lib_8h_aaadb9a508ff3e162bdab7a45d54ce88e}
+
+
+Flag specifying whether server is a deamon. 
+
+
+
+Definition at line 8 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!notice\+Buff@{notice\+Buff}}
+\index{notice\+Buff@{notice\+Buff}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{notice\+Buff}{noticeBuff}}]{\setlength{\rightskip}{0pt plus 5cm}char notice\+Buff\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a3343eda9b3e780395a0509b3cd3c1cbd}{}\label{_server_lib_8h_a3343eda9b3e780395a0509b3cd3c1cbd}
+
+
+The buffer of server notices. 
+
+
+
+Definition at line 7 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!nsockfd@{nsockfd}}
+\index{nsockfd@{nsockfd}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{nsockfd}{nsockfd}}]{\setlength{\rightskip}{0pt plus 5cm}int nsockfd\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_aa84798d04177520e38984d0234a64557}{}\label{_server_lib_8h_aa84798d04177520e38984d0234a64557}
+
+
+New socket file descriptor. 
+
+
+
+Definition at line 10 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!plot\+Name@{plot\+Name}}
+\index{plot\+Name@{plot\+Name}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{plot\+Name}{plotName}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ plot\+Name = \char`\"{}tmp/Plotter\+Server\+Files/output.\+png\char`\"{}}\hypertarget{_server_lib_8h_aaeebc6df5c6629080a763c0be580d74c}{}\label{_server_lib_8h_aaeebc6df5c6629080a763c0be580d74c}
+
+
+Defines the localization of \textquotesingle{}output.\+png\textquotesingle{}. 
+
+
+
+Definition at line 5 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!port@{port}}
+\index{port@{port}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}int port\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a63c89c04d1feae07ca35558055155ffb}{}\label{_server_lib_8h_a63c89c04d1feae07ca35558055155ffb}
+
+
+Server port number. 
+
+
+
+Definition at line 12 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!server\+\_\+ssl@{server\+\_\+ssl}}
+\index{server\+\_\+ssl@{server\+\_\+ssl}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{server\+\_\+ssl}{server_ssl}}]{\setlength{\rightskip}{0pt plus 5cm}S\+SL$\ast$ server\+\_\+ssl\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_ae2dd01ac08721021386d7edf80ab31e8}{}\label{_server_lib_8h_ae2dd01ac08721021386d7edf80ab31e8}
+
+
+Core structure in the S\+SL A\+PI. 
+
+
+
+Definition at line 16 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!server\+\_\+ssl\+\_\+ctx@{server\+\_\+ssl\+\_\+ctx}}
+\index{server\+\_\+ssl\+\_\+ctx@{server\+\_\+ssl\+\_\+ctx}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{server\+\_\+ssl\+\_\+ctx}{server_ssl_ctx}}]{\setlength{\rightskip}{0pt plus 5cm}S\+S\+L\+\_\+\+C\+TX$\ast$ server\+\_\+ssl\+\_\+ctx\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a6565bf20bfe95e34576a921a32e2e844}{}\label{_server_lib_8h_a6565bf20bfe95e34576a921a32e2e844}
+
+
+The global context structure. 
+
+
+
+Definition at line 15 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!server\+\_\+ssl\+\_\+method@{server\+\_\+ssl\+\_\+method}}
+\index{server\+\_\+ssl\+\_\+method@{server\+\_\+ssl\+\_\+method}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{server\+\_\+ssl\+\_\+method}{server_ssl_method}}]{\setlength{\rightskip}{0pt plus 5cm}S\+S\+L\+\_\+\+M\+E\+T\+H\+OD$\ast$ server\+\_\+ssl\+\_\+method\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_a3557813aa116b56d10daf27b11a5f1e4}{}\label{_server_lib_8h_a3557813aa116b56d10daf27b11a5f1e4}
+
+
+Describes the ssl library functions which implement the protocol version. 
+
+
+
+Definition at line 14 of file Server\+Lib.\+h.
+
+\index{Server\+Lib.\+h@{Server\+Lib.\+h}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Server\+Lib.\+h@{Server\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{sockfd}{sockfd}}]{\setlength{\rightskip}{0pt plus 5cm}int sockfd\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{_server_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}{}\label{_server_lib_8h_ad2c8fb3df3a737e0685e902870a611d2}
+
+
+Socket file descriptor. 
+
+
+
+Definition at line 9 of file Server\+Lib.\+h.
+

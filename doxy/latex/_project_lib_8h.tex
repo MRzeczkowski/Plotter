@@ -1,0 +1,156 @@
+\hypertarget{_project_lib_8h}{}\section{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/\+Project\+Lib.h File Reference}
+\label{_project_lib_8h}\index{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/\+Project\+Lib.\+h@{/home/mint/\+Desktop/\+P\+A\+P\+\_\+\+P\+R\+O\+J\+E\+K\+T/\+Project\+Lib.\+h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$netinet/in.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$netdb.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$syslog.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+Include dependency graph for Project\+Lib.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_project_lib_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_project_lib_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_project_lib_8h_a30362161c93e3f1a4ee4c673f535b5a8}{L\+E\+N\+G\+TH}~8192
+\begin{DoxyCompactList}\small\item\em Maximum length of sent file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_project_lib_8h_a7e15c8e2885871839fc2b820dfbdb4ce}{error} ()
+\item 
+F\+I\+LE $\ast$ \hyperlink{_project_lib_8h_a63d58319cc10a3e1505c56a22bdb0238}{xfopen} (const char $\ast$fn, const char $\ast$mode)
+\item 
+int \hyperlink{_project_lib_8h_ad32bb943b76f934465207c24f799c9f6}{badmode} (const char $\ast$s)
+\item 
+int \hyperlink{_project_lib_8h_aea69367c666445568e3215893409419d}{xfclose} (F\+I\+LE $\ast$fp)
+\item 
+int \hyperlink{_project_lib_8h_a47981aeac52a3ae3da0e30c26266fb7d}{xfexists} (char $\ast$fn)
+\item 
+char $\ast$ \hyperlink{_project_lib_8h_ac4bf47d0c8ddc34d278f4478d1a0d16d}{fnwoext} (char $\ast$nm, char $\ast$fn)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{_project_lib_8h_a179ab0a58242ed797fad4db1a75a4d0f}{err\+Buf} \mbox{[}256\mbox{]}
+\begin{DoxyCompactList}\small\item\em The buffer of server errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!L\+E\+N\+G\+TH@{L\+E\+N\+G\+TH}}
+\index{L\+E\+N\+G\+TH@{L\+E\+N\+G\+TH}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{L\+E\+N\+G\+TH}{LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+E\+N\+G\+TH~8192}\hypertarget{_project_lib_8h_a30362161c93e3f1a4ee4c673f535b5a8}{}\label{_project_lib_8h_a30362161c93e3f1a4ee4c673f535b5a8}
+
+
+Maximum length of sent file. 
+
+
+
+Definition at line 18 of file Project\+Lib.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!badmode@{badmode}}
+\index{badmode@{badmode}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{badmode(const char $\ast$s)}{badmode(const char *s)}}]{\setlength{\rightskip}{0pt plus 5cm}int badmode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{_project_lib_8h_ad32bb943b76f934465207c24f799c9f6}{}\label{_project_lib_8h_ad32bb943b76f934465207c24f799c9f6}
+Validates file mode \textquotesingle{}s\textquotesingle{} is \char`\"{}rwa+b\char`\"{} 
+
+Definition at line 57 of file Project\+Lib.\+h.
+
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!error@{error}}
+\index{error@{error}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{error()}{error()}}]{\setlength{\rightskip}{0pt plus 5cm}void error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_project_lib_8h_a7e15c8e2885871839fc2b820dfbdb4ce}{}\label{_project_lib_8h_a7e15c8e2885871839fc2b820dfbdb4ce}
+Error reporting function, reports error message that is in err\+Buff 
+
+Definition at line 29 of file Project\+Lib.\+h.
+
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!fnwoext@{fnwoext}}
+\index{fnwoext@{fnwoext}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{fnwoext(char $\ast$nm, char $\ast$fn)}{fnwoext(char *nm, char *fn)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ fnwoext (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nm, }
+\item[{char $\ast$}]{fn}
+\end{DoxyParamCaption}
+)}\hypertarget{_project_lib_8h_ac4bf47d0c8ddc34d278f4478d1a0d16d}{}\label{_project_lib_8h_ac4bf47d0c8ddc34d278f4478d1a0d16d}
+Isolates filename, without path or extension 
+
+Definition at line 92 of file Project\+Lib.\+h.
+
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!xfclose@{xfclose}}
+\index{xfclose@{xfclose}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{xfclose(\+F\+I\+L\+E $\ast$fp)}{xfclose(FILE *fp)}}]{\setlength{\rightskip}{0pt plus 5cm}int xfclose (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}\hypertarget{_project_lib_8h_aea69367c666445568e3215893409419d}{}\label{_project_lib_8h_aea69367c666445568e3215893409419d}
+file close with error check 
+
+Definition at line 71 of file Project\+Lib.\+h.
+
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!xfexists@{xfexists}}
+\index{xfexists@{xfexists}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{xfexists(char $\ast$fn)}{xfexists(char *fn)}}]{\setlength{\rightskip}{0pt plus 5cm}int xfexists (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{fn}
+\end{DoxyParamCaption}
+)}\hypertarget{_project_lib_8h_a47981aeac52a3ae3da0e30c26266fb7d}{}\label{_project_lib_8h_a47981aeac52a3ae3da0e30c26266fb7d}
+Checks if file \textquotesingle{}fn\textquotesingle{} already exists 
+
+Definition at line 82 of file Project\+Lib.\+h.
+
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!xfopen@{xfopen}}
+\index{xfopen@{xfopen}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{xfopen(const char $\ast$fn, const char $\ast$mode)}{xfopen(const char *fn, const char *mode)}}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+LE $\ast$ xfopen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fn, }
+\item[{const char $\ast$}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{_project_lib_8h_a63d58319cc10a3e1505c56a22bdb0238}{}\label{_project_lib_8h_a63d58319cc10a3e1505c56a22bdb0238}
+fopen with error checking -\/ short version 
+
+Definition at line 40 of file Project\+Lib.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{Project\+Lib.\+h@{Project\+Lib.\+h}!err\+Buf@{err\+Buf}}
+\index{err\+Buf@{err\+Buf}!Project\+Lib.\+h@{Project\+Lib.\+h}}
+\subsubsection[{\texorpdfstring{err\+Buf}{errBuf}}]{\setlength{\rightskip}{0pt plus 5cm}char err\+Buf\mbox{[}256\mbox{]}}\hypertarget{_project_lib_8h_a179ab0a58242ed797fad4db1a75a4d0f}{}\label{_project_lib_8h_a179ab0a58242ed797fad4db1a75a4d0f}
+
+
+The buffer of server errors. 
+
+
+
+Definition at line 19 of file Project\+Lib.\+h.
+
